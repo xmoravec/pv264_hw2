@@ -1,0 +1,4 @@
+[submodule "rapidcheck"]
+	path = rapidcheck
+	url = https://github.com/vlstill/rapidcheck.git
+	branch = pv264

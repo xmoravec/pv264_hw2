@@ -1,0 +1,17 @@
+image: cxx:latest
+
+variables:
+    CC: "clang"
+    CXX: "clang++"
+
+unit:
+    stage: build
+    script:
+        - git submodule update -i
+        - mkdir _build
+        - cd _build
+        - cmake .. -G Ninja
+        - ninja vgunit unit
+    when: always
+    tags:
+        - shared-fi
