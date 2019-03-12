@@ -3,6 +3,7 @@ image: cxx:latest
 variables:
     CC: "clang"
     CXX: "clang++"
+    ASAN_OPTIONS: "detect_leaks=0"
 
 unit:
     stage: build
